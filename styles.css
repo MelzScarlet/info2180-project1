@@ -119,3 +119,30 @@ header .container li :hover{
     color: #555;
     line-height: 1.6;
 }
+
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    font-size: 1.2rem;
+}
+
+.testing-desciption {
+    max-width: 60%;
+}
+
+.cta .btn {
+    padding: 12px 24px;
+    text-decoration: none;
+    background-color: rgb(180, 130, 88);
+    color: white;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+.cta .btn:hover{
+    background-color: bisque;
+    color: #000;
+}
+
