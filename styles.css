@@ -176,3 +176,39 @@ header .container li :hover{
     color: #555;
 }
 
+.newsletter .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+}
+
+.newsletter input[type="email"] {
+    padding: 12px;
+    font-size: 1rem;
+    width: 250px; 
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.newsletter .btn {
+    padding: 12px 20px;
+    background-color: rgb(180, 130, 88);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.newsletter .btn:hover{
+    background-color: bisque;
+    color: #000;
+}
