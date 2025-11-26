@@ -5,9 +5,15 @@ body {
     font-family: "Nunito Sans", "consolas", sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
+    max-width: 1200px;
     margin: 0 auto;
-    width: 100%;
+    padding: 0 30px;
 }
 
 header .container{
@@ -59,4 +65,57 @@ header .container li :hover{
 
 .overview-hero-text h2{
     font-size: 2rem;
+}
+
+.learn-about {
+    padding: 40px 0;
+    background-color: burlywood;
+}
+
+.learn-about h2 {
+    text-align: center; 
+    font-size: 2rem;
+    color: #333;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 9px rgb(196, 195, 194);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%; /* Make the image fill the width of its card */
+    height: 200px; /* Set a fixed height for consistency across images */
+    object-fit: cover; /* Crop images to fit without distortion */
+    display: block; /* Remove any extra space below the image */
+}
+
+.card .card-body {
+    padding: 20px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-body h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card .card-body p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
 }
